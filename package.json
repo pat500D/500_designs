@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "cypress": "^13.3.0"
+  },
+  "dependencies": {
+    "browserstack-cypress-cli": "^1.25.3",
+    "cypress-plugin-xhr-toggle": "^1.0.0"
+  }
+}

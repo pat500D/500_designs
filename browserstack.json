@@ -1,0 +1,33 @@
+{
+    "auth": {
+      "username": "qateam_G6SJNR",
+      "access_key": "8L2MzauDFJzpwWotgXLi"
+    },
+    "browsers": [{
+        "browser": "chrome",
+        "os": "Windows 10",
+        "versions": ["latest"]
+      },
+      {
+        "browser": "firefox",
+        "os": "Windows 10",
+        "versions": ["latest"]
+      }
+    ],
+    "run_settings": {
+      "cypress_config_file": "./cypress.config.js",
+      "project_name": "500-designs-dev",
+      "build_name": "500-designs-form-submit_dev",
+      "parallels": "5",
+      "spec_timeout": 30,
+        "npm_dependencies": {            
+            "cypress": "12.17.4",
+            "cypress-plugin-xhr-toggle": "^1.0.0",
+            "cypress-real-events": "^1.10.0",
+            "@percy/cli": "^1.26.3",
+            "@percy/cypress": "^3.1.2"
+        }  
+    },
+
+    "testObservability": false
+  }
