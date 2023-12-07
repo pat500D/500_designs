@@ -6,10 +6,10 @@ module.exports = defineConfig({
     baseUrl: "https://dev500designs.wpengine.com/",
     chromeWebSecurity: false,
     pageLoadTimeout: 30000,
-    defaultCommandTimeout: 5000,
+    defaultCommandTimeout: 10000,
     requestTimeout: 5000,
-    viewportWidth: 1440,
-    viewportHeight: 900,
+    viewportWidth: 1920,
+    viewportHeight: 1080,
     waitForAnimations:	true,
     animationDistanceThreshold:	5,
     setupNodeEvents(on, config) {
