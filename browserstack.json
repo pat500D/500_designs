@@ -10,7 +10,12 @@
       },
       {
         "browser": "firefox",
-        "os": "Windows 10",
+        "os": "OS X Mojave",
+        "versions": ["latest"]
+      },
+      {
+        "browser": "edge",
+        "os": "OS X Catalina",
         "versions": ["latest"]
       }
     ],
