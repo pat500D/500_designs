@@ -4,6 +4,7 @@ describe('Contact Us - Form Submission', () => {
 
   beforeEach(() => {
       cy.visit('/contact-us/')
+      cy.wait(2000)
   });
 
   it('Check form submission successfully and redirection to thank you page', () => {

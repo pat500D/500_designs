@@ -7,6 +7,7 @@
     "cypress-plugin-xhr-toggle": "^1.0.0"
   },
   "scripts": {
-    "cy:run": "cypress run"
+    "cy:run": "cypress run",
+    "browserstack": "npx browserstack-cypress run"    
   }
 }
