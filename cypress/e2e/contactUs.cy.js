@@ -2,12 +2,9 @@
 
 describe('Contact Us - Form Submission', () => {
 
-  beforeEach(() => {
+  it('Check form submission successfully and redirection to thank you page', () => {
       cy.visit('/contact-us/')
       cy.wait(2000)
-  });
-
-  it('Check form submission successfully and redirection to thank you page', () => {
       cy.fixture('formData').then((data) => {
           cy.get('#form-field-message').type(data.name) // full name
           cy.get('#form-field-field_ee5245b').type(data.email) // email address
