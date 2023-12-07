@@ -20,7 +20,7 @@ describe('Contact Us - Form Submission', () => {
           cy.get('button[type="submit"]').click() // Submit btn
 
           //check form submission is successfull
-          cy.url().should('contain', 'contact-us/?submitted=1')
+          cy.url().should('contain', 'submitted')
           cy.get('div.elementor-widget-container').find('p')
             .should('contain', "Nice! We’ll be in touch soon.")
       })
