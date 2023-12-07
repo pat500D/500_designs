@@ -1,7 +1,7 @@
 {
   "name": "John Doe",
   "email": "test@500designs.com",
-  "business": "500 Designs Test",
+  "business": "500 Designs Test Only",
   "budget": "1000",
-  "comment": "This is a test form submission."
+  "comment": "This is a automated test form submission."
 }
