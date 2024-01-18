@@ -3,7 +3,12 @@
 describe('Contact Us - Form Submission', () => {
 
   it('Check form submission successfully and redirection to thank you page', () => {
-      cy.visit('/contact-us/')
+      cy.visit('/contact-us/', {
+          auth: {
+            username: 'dev500designs',
+            password: '500designs',
+          },
+      })
       cy.wait(2000)
       cy.fixture('formData').then((data) => {
           cy.get('#form-field-message').type(data.name) // full name
