@@ -16,11 +16,5 @@ jobs:
           browser: chrome
           headed: true
           
-      - name: 'BrowserStack Env Setup'
-        uses: 'browserstack/github-actions/setup-env@master'
-        with:
-          username:  ${{ secrets.BROWSERSTACK_USERNAME }}
-          access-key: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
-          
-      - name: 'Installing browserstack-cypress-cli'
-        run: npm install -g browserstack-cypress-cli
+      - run: npm run browserstack
+        
