@@ -1,0 +1,26 @@
+name: Cypress Test
+
+on: [push, pull_request]
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      # Install npm dependencies, cache them correctly
+      # and run all Cypress tests
+      - name: Run Cypress Test
+        uses: cypress-io/github-action@v6
+        with:
+          browser: chrome
+          headed: true
+          
+      - name: 'BrowserStack Env Setup'
+        uses: 'browserstack/github-actions/setup-env@master'
+        with:
+          username:  ${{ secrets.BROWSERSTACK_USERNAME }}
+          access-key: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
+          
+      - name: 'Installing browserstack-cypress-cli'
+        run: npm install -g browserstack-cypress-cli
