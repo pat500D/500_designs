@@ -1,6 +1,8 @@
 name: Cypress Test
 
-on: [push, pull_request]
+on: 
+  schedule: ## Schedule the job to run at 12pm every Monday and Friday
+  - cron: "*/10 * * * 1-5" 
 
 jobs:
   cypress-run:
