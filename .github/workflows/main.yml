@@ -1,8 +1,8 @@
-name: Cypress Test
+name: Execute Cypress script for form submission (trial)
 
 on: 
   schedule: ## Schedule the job to run at 12pm every Monday and Friday
-  - cron: "*/10 * * * 1-5" 
+  - cron: "*/10 * * * *" 
 
 jobs:
   cypress-run:
