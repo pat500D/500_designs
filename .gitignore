@@ -6,5 +6,6 @@ cypress/videos/
 .DS_Store
 dist/
 log/
-npm_install_debug.log
 results/
+npm_install_debug.log
+
