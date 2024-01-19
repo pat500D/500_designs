@@ -2,7 +2,7 @@ name: Execute Cypress script for form submission
 
 on: 
   schedule: ## Schedule the job to run at 12pm every Monday and Friday
-    - cron: "0 4 * * 1,5" 
+    - cron: "0 5 * * 1,5" 
 
 jobs:
   cypress-run:
