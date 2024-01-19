@@ -35,5 +35,11 @@
         }  
     },
 
-    "testObservability": false
+    "testObservability": true,
+    "browserstackAutomation": true,
+    "testObservabilityOptions": {
+      "projectName": "500 Designs",
+      "buildName": "Contact Us - Form Submission",
+      "buildTag": ["sanity", "regression"]
   }
+}

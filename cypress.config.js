@@ -1,4 +1,5 @@
 const { defineConfig } = require("cypress");
+const browserstackTestObservabilityPlugin = require('browserstack-cypress-cli/bin/testObservability/plugin');
 
 module.exports = defineConfig({
   projectId: '5hawje',
@@ -13,7 +14,8 @@ module.exports = defineConfig({
     waitForAnimations:	true,
     animationDistanceThreshold:	5,
     setupNodeEvents(on, config) {
-      // implement node event listeners here
+      browserstackTestObservabilityPlugin(on, config);
+      return config;
     },
     env: {
       hideXhr: true,
