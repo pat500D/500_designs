@@ -21,4 +21,3 @@ jobs:
           headed: true
           
       - run: npm run browserstack
-        
