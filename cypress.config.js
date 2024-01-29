@@ -4,7 +4,7 @@ const browserstackTestObservabilityPlugin = require('browserstack-cypress-cli/bi
 module.exports = defineConfig({
   projectId: '5hawje',
   e2e: {
-    baseUrl: "https://dev500designs.wpengine.com/",
+    baseUrl: "https://500designs.com/",
     chromeWebSecurity: false,
     pageLoadTimeout: 30000,
     defaultCommandTimeout: 10000,
