@@ -12,7 +12,7 @@ describe('Contact Us - Form Submission Test', () => {
   })
 
   it('1. Check form submission successfully and redirection to thank you page.', () => {
-      cy.wait(2000)
+      cy.wait(5000)
       cy.fixture('formData').then((data) => {
         cy.get('#form-field-message').type(data.name) // full name
         cy.get('#form-field-field_ee5245b').type(data.email) // email address
@@ -35,7 +35,7 @@ describe('Contact Us - Form Submission Test', () => {
 
 
   it('2. Check that form should not submit if required fields are blank and shows error messages.', () => {
-      cy.wait(2000)
+      cy.wait(5000)
       cy.clickBtn('Submit')
       cy.get('input:invalid').should('have.length', 3) // Validate that 3 fields are set as require
       cy.get('#form-field-message').then(($input) => {
