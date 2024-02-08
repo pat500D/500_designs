@@ -2,7 +2,7 @@ const { defineConfig } = require("cypress");
 const browserstackTestObservabilityPlugin = require('browserstack-cypress-cli/bin/testObservability/plugin');
 
 module.exports = defineConfig({
-  projectId: '5hawje',
+  projectId: 'n4htha',
   e2e: {
     baseUrl: "https://500designs.com/",
     chromeWebSecurity: false,

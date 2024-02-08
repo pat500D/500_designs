@@ -1,7 +1,8 @@
 {
   "devDependencies": {
+    "browserstack-cypress-cli": "^1.25.3",
     "cypress": "^13.3.0",
-    "browserstack-cypress-cli": "^1.25.3"
+    "cypress-email-results": "^1.8.0"
   },
   "dependencies": {
     "cypress-plugin-xhr-toggle": "^1.0.0"
